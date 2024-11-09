@@ -7,7 +7,7 @@ const CustomerController = require('../controllers/CustomerController');
 // Create customer (authenticated users only)
 router.post('/customer', authenticateToken, CustomerController.createCustomer);
 
-// Get all customers for the authenticated user
+// Get all customers  sssfor the authenticated user
 router.get('/customers', authenticateToken, CustomerController.getCustomersByUserId);
 
 // Get a single customer by ID (authenticated users only)
